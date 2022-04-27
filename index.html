@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>NumerOn</title>
+</head>
+<body>
+  <header><h1>ぬめろん練習</h1></header>
+  <main>
+    <div class="container">
+      <input type="submit" value="数字を生成する" id="create-number" class="btn btn-solid">
+      <div class="input-area">
+        <div class="first close">
+          数字を入れてね(1回目)<br>
+          <input type="text" id="first-input" class="input">
+          <input type="submit" value="送信" id="first-submit" class="submit btn btn-solid">
+          <div id="first-tmp-input"></div>
+        </div>
+        <div class="second close">
+          <div id="eatbite1" style="color: blue"></div><br>
+          残念。数字を入れてね(2回目)<br>
+          <input type="text" id="second-input" class="input">
+          <input type="submit" value="送信" id="second-submit" class="submit btn btn-solid">
+          <div id="second-tmp-input"></div>
+        </div>
+        <div class="third close">
+          <div id="eatbite2" style="color: blue"></div><br>
+          残念。数字を入れてね(3回目)<br>
+          <input type="text" id="third-input" class="input">
+          <input type="submit" value="送信" id="third-submit" class="submit btn btn-solid">
+          <div id="third-tmp-input"></div>
+        </div>
+        <div class="forth close">
+          <div id="eatbite3" style="color: blue"></div><br>
+          残念。数字を入れてね(4回目)<br>
+          <input type="text" id="forth-input" class="input">
+          <input type="submit" value="送信" id="forth-submit" class="submit btn btn-solid">
+          <div id="forth-tmp-input"></div>
+        </div>
+        <div class="fifth close">
+          <div id="eatbite4" style="color: blue"></div><br>
+          残念。数字を入れてね(ラスト)<br>
+          <input type="text" id="fifth-input" class="input">
+          <input type="submit" value="送信" id="fifth-submit" class="submit btn btn-solid">
+          <div id="fifth-tmp-input"></div>
+        </div>
+        <div class="error close">
+          <p style="color: red">半角数字を入力してください</p>
+        </div>
+        <div class="digit-error close">
+          <p style="color: red">３桁を入力してください</p>
+        </div>
+        <div class="num-error close">
+          <p style="color: red">各位は異なる数字にしてください。</p>
+        </div>
+        <div class="correct close">
+          おめでとう！正解！
+        </div>
+        <div class="false close">
+          <div id="eatbite5" style="color: blue"></div><br>
+          残念！！またの機会に！！
+          <div id="answer"></div>
+        </div>
+      </div>
+      <input type="submit" value="リセットする" id="reset-number" class="btn btn-solid">
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
